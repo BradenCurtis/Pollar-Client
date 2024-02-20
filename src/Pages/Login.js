@@ -28,7 +28,7 @@ export const Login = () => {
             "username": data.Username,
             "password": data.Password,
         }
-            axios.post("http://localhost:3001/users/login", loginUser).then((response) => {
+            axios.post("https://pollar-server-1146522ba7f7.herokuapp.com/users/login", loginUser).then((response) => {
             if (response.data.error) {alert(response.data.error);}
             else{
                 sessionStorage.setItem("accessToken", response.data);

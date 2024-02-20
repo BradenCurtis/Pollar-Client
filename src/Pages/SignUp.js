@@ -27,7 +27,7 @@ export const SignUp = () => {
             "password": data.Password,
         }
 
-        axios.post("http://localhost:3001/users/register", newUser).then((response) => {
+        axios.post("https://pollar-server-1146522ba7f7.herokuapp.com/users/register", newUser).then((response) => {
             //console.log("User uploaded to DB");
             //console.log(data);
             navigate("/login");

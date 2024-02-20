@@ -43,7 +43,7 @@ export const CreatePost = () => {
             "option1": data.option1,
             "option2": data.option2,
         }
-        axios.post("http://localhost:3001/posts",
+        axios.post("https://pollar-server-1146522ba7f7.herokuapp.com/posts",
          newPost, 
          {headers: {accessToken: sessionStorage.getItem("accessToken")}})
          .then((response) => {

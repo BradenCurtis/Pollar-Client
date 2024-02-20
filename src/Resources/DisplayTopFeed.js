@@ -17,7 +17,7 @@ export const DisplayTopFeed = () => {
     }, [feedElements]);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/posts").then((response) => {
+        axios.get("https://pollar-server-1146522ba7f7.herokuapp.com/posts").then((response) => {
           //console.log(response.data);
           setFeedElements(response.data);
         });
@@ -66,7 +66,7 @@ export const DisplayTopFeed = () => {
     const upvote1 = (postId) => {
         axios
         .post(
-            "http://localhost:3001/vote1", 
+            "https://pollar-server-1146522ba7f7.herokuapp.com/vote1", 
             {PostId: postId}, 
             {headers: {accessToken: sessionStorage.getItem("accessToken")}})
         .then((response) => {
@@ -96,7 +96,7 @@ export const DisplayTopFeed = () => {
     const upvote2 = (postId) => {
         axios
         .post(
-            "http://localhost:3001/vote2", 
+            "https://pollar-server-1146522ba7f7.herokuapp.com/vote2", 
             {PostId: postId}, 
             {headers: {accessToken: sessionStorage.getItem("accessToken")}})
         .then((response) =>{ 
@@ -127,7 +127,7 @@ export const DisplayTopFeed = () => {
         let splitupvote2 = true;
         let splitupvote1 = true;
 
-        axios.get("http://localhost:3001/vote2").then((response) => {
+        axios.get("https://pollar-server-1146522ba7f7.herokuapp.com/vote2").then((response) => {
             
             var vote2Array = response.data;
 
@@ -137,7 +137,7 @@ export const DisplayTopFeed = () => {
                 }}
 
 
-            axios.get("http://localhost:3001/vote1").then((response) => {
+            axios.get("https://pollar-server-1146522ba7f7.herokuapp.com/vote1").then((response) => {
             
                 var vote1Array = response.data;
                 
@@ -150,7 +150,7 @@ export const DisplayTopFeed = () => {
                     //console.log("double if executed")
                     axios
                         .post(
-                            "http://localhost:3001/vote2", 
+                            "https://pollar-server-1146522ba7f7.herokuapp.com/vote2", 
                             {PostId: postIdsrc}, 
                             {headers: {accessToken: sessionStorage.getItem("accessToken")}})
                         .then((response) => {}).catch((error) => {
@@ -158,7 +158,7 @@ export const DisplayTopFeed = () => {
                         })  
                     axios
                         .post(
-                            "http://localhost:3001/vote1", 
+                            "https://pollar-server-1146522ba7f7.herokuapp.com/vote1", 
                             {PostId: postIdsrc}, 
                             {headers: {accessToken: sessionStorage.getItem("accessToken")}})
                         .then((response) => {
@@ -207,7 +207,7 @@ export const DisplayTopFeed = () => {
         if (secondChance){
 
         let config = {headers: {accessToken: sessionStorage.getItem("accessToken")}, data: {PostId: PostId}}
-        axios.delete("http://localhost:3001/posts",config)
+        axios.delete("https://pollar-server-1146522ba7f7.herokuapp.com/posts",config)
         .then(() => {
             //console.log("front end post deleted");
             window.location.reload();
