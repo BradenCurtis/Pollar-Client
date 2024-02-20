@@ -1,38 +1,428 @@
 .App {
-  text-align: center;
+  background-image: radial-gradient(circle, #DDDDDD, #bbbbbb);
+  margin: -10px;
+  padding-bottom: 100px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.createPostForm{
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.createPostText{
+  width: 550px;
+  height: 55px;
+  text-align: left;
+  vertical-align: top;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 5px;
+  font-size: 15px;
+  resize: none;
+  margin-bottom: 1.5vh;
+  border: solid 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.createPostTitle{
+  width: 550px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 22px;
+  margin-bottom: 1.5vh;
+  border: solid 3px;
+}
+
+.createPostSubmit{
+width: 557px;
+height: 35px;
+background-color: #222222;
+border-radius: 5px;
+color: #DDDDDD;
+cursor: pointer;
+}
+
+.createPostError{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.makeRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.postDisplayList{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.postHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  
+  background-color: #272727;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postTop{
+  width: 600px;
+  height: 90%;
+  color: #DDDDDD
+}
+
+.postTitle{
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.postUserDate{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+.postUsername{
+  margin: 0px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.postDate{
+  margin: 0px;
+}
+
+.postBody {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-color: #DDDDDD;
+  background-color: #444444;
+  
+}
+
+.postFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  
+  padding-right: 20%;
+  padding-left: 20%;
+  background-color: #272727;
+}
+
+.postOption1{
+  
+  width: 100%;
+  padding: 2px;
+  margin-right: -1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: solid 2px;
+  border-color: #DDDDDD;
+}
+
+.postOption2{
+  
+  width: 100%;
+  margin-left: -1px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: solid 2px;
+  border-color: #DDDDDD;
+}
+
+.createPage{
+  display: flex;
+  height: 80vh;
+}
+
+.postVoting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.upvote{
+  color: #DDDDDD;
+  background-color: #444444;
+  width: 100%;
+  color: #DDDDDD;
+  cursor: pointer;
+}
+
+.deleteButton{
+  color: #DDDDDD;
+  background-color: #AA2222;
+  color: #DDDDDD;
+  cursor: pointer;
+}
+
+.postWhole{
+  margin-top: 20px;
+  border: solid 10px;
+  border-color: #222222;
+  background-color: #444444;
+  border-radius: 8px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #222222;
+  color: #DDDDDD;
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  
+  
+  font-size: 20px;
+}
+
+.navbar a {
+  color: #DDDDDD;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid 1px;
+  border-color: #DDDDDD;
+}
+
+.pageHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  margin: 0px;
+  width: 100%;
+  margin-right: -200px;
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pageTitle{
+  background-color: #222222;
+  color: #DDDDDD;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.createPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginSignup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65vh;
+  padding-top: 9vh;
+}
+
+.makeColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.loginSignupError{
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: .5vh;
+  margin-bottom: 1.5vh;
+}
+
+.loginSignuptext{
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0px;
+  margin: 0px;
+  align-self: center;
+}
+
+.loginSignupSubmit{
+  background-color: #222222;
+  border-radius: 5px;
+  color: #DDDDDD;
+  width: 100%;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.loginSignupInput{
+  width: 20vw;
+  height: 2.5vh;
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+.usernameDisplay{
+  color: #DDDDDD;
+  width:100vw;
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.privacyTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 900;
+  width: 100vw;
+  background-color: #222222;
+  color: #DDDDDD;
+  margin: -30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.privacyButton{
+  height: 50%;
+  margin-top: 3%;
+  margin-right: 3%;
+  color: #DDDDDD;
+  background-color: #222222;
+  border: solid #DDDDDD;
+  cursor: pointer;
+}
+
+.privacyHeader{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.privacyBody{
+  font-size: 16px;
+}
+
+.privacyLogo{
+  font-weight: bold;
+}
+
+.privacyWhole{
+  padding: 30px;
+  margin-bottom: -8%;
+}
+
+.signupPrivacy{
+  width:20vw;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 5%;
+  margin-top: 0px;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+}
+
+.signupPrivacy a{
+  color:#222222;
+}
+
+.signupPrivacyText{
+  width: 100%;
+  margin:0px;
+  
+
+}
+
+.loginPrivacyText{
+  width: 20vw;
+  text-align: center;
+}
+
+.loginPrivacyText a{
+  color:#222222;
+  font-weight: bold;
+}
+
+.aboutIntro{
+  width: 100%;
+
+  font-size: 24px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutHeader{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.aboutBody{
+  font-size: 20px;
+
+}
+
+.pollarTitle{
+
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 3vh;
+  font-weight: bolder;
+  background-color: #DDDDDD;
+  padding:.8%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  border: solid 5px;
+  border-color: #222222;
+  color: #222222;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3)
+}
+
+.aboutWhole{
+  padding: 30px;
+  height: 93vh;
+  margin-bottom: -8%;
+}
+
+.suggestions{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pageNotFound{
+  height: 76vh;
+  width: 100vw;
+  background-color: #DDDDDD;
+  padding: 50px;
+
 }
