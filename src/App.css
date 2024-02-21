@@ -29,7 +29,7 @@
   height: 30px;
   font-weight: bold;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 1.5vh;
   border: solid 3px;
 }
@@ -83,8 +83,10 @@ cursor: pointer;
 }
 
 .postTitle{
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
+  max-width: 450px;
+  word-wrap:break-word;
 }
 
 .postUserDate{

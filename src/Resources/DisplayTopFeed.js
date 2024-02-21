@@ -29,7 +29,7 @@ export const DisplayTopFeed = () => {
         const sortedElements = temp.sort((a, b) => {
 
             if (a.Vote1s.length == 0 && a.Vote2s.length == 0){
-                return 1;
+                return -1;
             }
             if (b.Vote1s.length == 0 && b.Vote2s.length == 0){
                 return -1;
@@ -40,16 +40,15 @@ export const DisplayTopFeed = () => {
 
 
             if (SortValueA > SortValueB){
-                return 1;
+                return -1;
             }
             else if (SortValueA < SortValueB){
-                return -1;
+                return 1;
             }
             else {
                 return 0;
             }
 
-            //return ((popularVolumeSensitivity - (Math.abs(b.vote1 - b.vote2))/(b.vote1 + b.vote2)) * (popularSplitSensitivity - ((100 + b.vote1 + b.vote2)/(b.vote1 + b.vote2))))-((popularVolumeSensitivity - (Math.abs(a.vote1 - a.vote2))/(a.vote1 + a.vote2)) * (popularSplitSensitivity - ((100 + a.vote1 + a.vote2)/(a.vote1 + a.vote2))))
         });
         
     //console.log(sortedElements);
