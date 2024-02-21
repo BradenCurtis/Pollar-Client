@@ -18,7 +18,7 @@ export const DisplayPost = (props) => {
 
         const dayString = day.toString();
 
-        return firstSplit[0] + "-" + firstSplit[1] + "-" + dayString;
+        return firstSplit[1] + "-" + dayString + "-" + firstSplit[0];
         
         
 
