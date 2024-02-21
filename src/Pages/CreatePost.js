@@ -20,7 +20,7 @@ export const CreatePost = () => {
     }, []);
 
     const schema = yup.object().shape({
-        title: yup.string().max(25, "Max Characters: 25").required("A Title is needed"),
+        title: yup.string().max(35, "Max Characters: 25").required("A Title is needed"),
         option1: yup.string().max(250, "Max Characters: 250").required("Provide an option 1"),
         option2: yup.string().max(250, "Max Characters: 250").required("Provide an option 2")
         

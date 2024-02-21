@@ -38,11 +38,6 @@ export const DisplayTopFeed = () => {
             const SortValueA = ((popularVolumeSensitivity - (Math.abs(a.Vote1s.length - a.Vote2s.length))/(a.Vote1s.length + a.Vote2s.length)) * (popularSplitSensitivity - ((100 + a.Vote1s.length + a.Vote2s.length)/(a.Vote1s.length + a.Vote2s.length))))
             const SortValueB = ((popularVolumeSensitivity - (Math.abs(b.Vote1s.length - b.Vote2s.length))/(b.Vote1s.length + b.Vote2s.length)) * (popularSplitSensitivity - ((100 + b.Vote1s.length + b.Vote2s.length)/(b.Vote1s.length + b.Vote2s.length))))
 
-            //console.log(SortValueA);
-            //console.log(SortValueB);
-
-            //console.log(a.Vote1s.length);
-            //console.log(a.Vote2s.length);
 
             if (SortValueA > SortValueB){
                 return 1;
