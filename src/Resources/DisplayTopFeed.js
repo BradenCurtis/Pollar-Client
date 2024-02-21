@@ -53,7 +53,7 @@ export const DisplayTopFeed = () => {
         
     //console.log(sortedElements);
         const popularElements = sortedElements.slice(0, feedQuantity);
-        popularElements.reverse();
+        
         setPopularFeedElements(popularElements);
     };
 
