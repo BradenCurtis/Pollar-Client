@@ -29,7 +29,7 @@ export const DisplayTopFeed = () => {
         const sortedElements = temp.sort((a, b) => {
 
             if (a.Vote1s.length == 0 && a.Vote2s.length == 0){
-                return -1;
+                return 1;
             }
             if (b.Vote1s.length == 0 && b.Vote2s.length == 0){
                 return -1;
