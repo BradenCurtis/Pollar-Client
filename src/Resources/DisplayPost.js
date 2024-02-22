@@ -45,7 +45,7 @@ export const DisplayPost = (props) => {
             </div>
             <div className="postFooter">
                 <p>Option 1: {props.vote1}</p>
-                <p>{Math.floor((props.vote1 / ((props.vote1 + props.vote2) || 1)) * 100) / 100}% - Split - {Math.floor((props.vote2 / ((props.vote1 + props.vote2) || 1)) * 100) / 100}%</p>
+                <p>{Math.floor((props.vote1 / ((props.vote1 + props.vote2) || 1)) * 1000) / 10}% - Split - {Math.floor((props.vote2 / ((props.vote1 + props.vote2) || 1)) * 100) / 100}%</p>
                 <p> Option 2: {props.vote2}</p>        
             </div>
         </div>
