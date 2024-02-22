@@ -68,12 +68,12 @@ export const CreatePost = () => {
             </div>
 
             <div className="makeRow">
-                <textarea className="createPostText" type="text" placeholder="Option 1" {...register("option1")} />
+                <textarea className="createPostText" type="text" placeholder="Left Option" {...register("option1")} />
                 <p className="createPostError">{errors.option1?.message}</p>
             </div>
 
             <div className="makeRow">
-                <textarea className="createPostText" type="text" placeholder="Option 2" {...register("option2")} />
+                <textarea className="createPostText" type="text" placeholder="Right Option" {...register("option2")} />
                 <p className="createPostError">{errors.option2?.message}</p>
             </div>
 

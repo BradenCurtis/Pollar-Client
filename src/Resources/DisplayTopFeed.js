@@ -221,9 +221,9 @@ export const DisplayTopFeed = () => {
                     <div className="postWhole" key={element.id} >
                         <DisplayPost title={element.title} option1={element.option1} option2={element.option2} vote1={element.Vote1s.length} vote2={element.Vote2s.length} createdAt={element.createdAt} id={element.id} username={element.username}/>
                         <div className="postVoting">
-                            <button className="upvote" onClick={() => upvote1(element.id)}>Option 1</button>
+                            <button className="upvote" onClick={() => upvote1(element.id)}>Left</button>
                             <button className="upvote" onClick={() => splitVote(element.id)}>Split Em'</button>
-                            <button className="upvote" onClick={() => upvote2(element.id)}>Option 2</button>
+                            <button className="upvote" onClick={() => upvote2(element.id)}>Right</button>
                             {sessionStorage.getItem("username") == element.username && (<button className="deleteButton" onClick={() => {deletePost(element.id)}}>Delete</button>)}
                         </div>
                     </div>
