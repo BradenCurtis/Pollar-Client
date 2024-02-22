@@ -36,17 +36,17 @@ export const DisplayPost = (props) => {
             </div>
             <div className="postBody">
                 <div className="postOption1">
-                    <p>Left: {props.option1}</p>
+                    <p><b>Left:</b> {props.option1}</p>
                 </div>
                 <div className="postOption2">
-                    <p>Right: {props.option2}</p>
+                    <p><b>Right:</b> {props.option2}</p>
                 </div>
                 
             </div>
             <div className="postFooter">
-                <p>Left : {props.vote1}</p>
+                <p>Votes: {props.vote1}</p>
                 <p>{Math.floor((props.vote1 / ((props.vote1 + props.vote2) || 1)) * 1000) / 10}% - Split - {Math.floor((props.vote2 / ((props.vote1 + props.vote2) || 1)) * 1000) / 10}%</p>
-                <p> Right : {props.vote2}</p>        
+                <p>Votes: {props.vote2}</p>        
             </div>
         </div>
     )
