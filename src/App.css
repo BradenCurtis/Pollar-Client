@@ -430,7 +430,7 @@ cursor: pointer;
 }
 
 @media (max-width: 768px){
-  .postTop{
+  .postWhole{
     width: 90%;
   }
 }
