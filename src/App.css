@@ -428,3 +428,9 @@ cursor: pointer;
   padding: 50px;
 
 }
+
+@media (max-width: 768px){
+  .postTop{
+    width: 90%;
+  }
+}
