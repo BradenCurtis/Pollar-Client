@@ -1,18 +1,18 @@
-/* General Styles */
 .App {
   background-image: radial-gradient(circle, #DDDDDD, #bbbbbb);
   margin: -10px;
   padding-bottom: 100px;
+  
 }
 
-.createPostForm {
+.createPostForm{
   display: flex;
   flex-direction: column;
 }
 
-.createPostText {
-  width: 100%;
-  max-width: 550px;
+
+.createPostText{
+  width: 550px;
   height: 55px;
   text-align: left;
   vertical-align: top;
@@ -24,9 +24,8 @@
   border: solid 3px;
 }
 
-.createPostTitle {
-  width: 100%;
-  max-width: 550px;
+.createPostTitle{
+  width: 550px;
   height: 30px;
   font-weight: bold;
   border-radius: 5px;
@@ -35,21 +34,21 @@
   border: solid 3px;
 }
 
-.createPostSubmit {
-  width: 100%;
-  max-width: 557px;
-  height: 35px;
-  background-color: #222222;
-  border-radius: 5px;
-  color: #DDDDDD;
-  cursor: pointer;
+.createPostSubmit{
+width: 557px;
+height: 35px;
+background-color: #222222;
+border-radius: 5px;
+color: #DDDDDD;
+cursor: pointer;
 }
 
-.createPostError {
+.createPostError{
   color: red;
   font-size: 14px;
   font-weight: bold;
 }
+
 
 .makeRow {
   display: flex;
@@ -57,49 +56,52 @@
   align-items: center;
 }
 
-.postDisplayList {
+
+
+.postDisplayList{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
 }
 
-.postHeader {
+.postHeader{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
+  
   background-color: #272727;
+  
 }
 
-.postTop {
-  width: 100%;
-  max-width: 600px;
+.postTop{
+  width: 600px;
   height: 90%;
-  color: #DDDDDD;
+  color: #DDDDDD
 }
 
-.postTitle {
+.postTitle{
   font-size: 20px;
   font-weight: 900;
   max-width: 450px;
-  word-wrap: break-word;
+  word-wrap:break-word;
 }
 
-.postUserDate {
+.postUserDate{
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: right;
 }
 
-.postUsername {
+.postUsername{
   margin: 0px;
   margin-bottom: 5px;
   text-align: right;
 }
 
-.postDate {
+.postDate{
   margin: 0px;
 }
 
@@ -108,23 +110,28 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  
   border-top: solid 2px;
   border-bottom: solid 2px;
   border-color: #DDDDDD;
   background-color: #444444;
+  
 }
 
-.postFooter {
+.postFooter{
   display: flex;
   flex-direction: row;
   align-items: center;
+
   justify-content: space-between;
+  
   padding-right: 20%;
   padding-left: 20%;
   background-color: #272727;
 }
 
-.postOption1 {
+.postOption1{
+  
   width: 100%;
   padding: 2px;
   margin-right: -1px;
@@ -134,7 +141,8 @@
   border-color: #DDDDDD;
 }
 
-.postOption2 {
+.postOption2{
+  
   width: 100%;
   margin-left: -1px;
   padding: 2px;
@@ -144,33 +152,34 @@
   border-color: #DDDDDD;
 }
 
-.createPage {
+.createPage{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 80vh;
 }
 
-.postVoting {
+.postVoting{
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
 
-.upvote {
+.upvote{
   color: #DDDDDD;
   background-color: #444444;
   width: 100%;
+  color: #DDDDDD;
   cursor: pointer;
 }
 
-.deleteButton {
+.deleteButton{
   color: #DDDDDD;
   background-color: #AA2222;
+  color: #DDDDDD;
   cursor: pointer;
 }
 
-.postWhole {
+.postWhole{
   margin-top: 20px;
   border: solid 10px;
   border-color: #222222;
@@ -179,16 +188,19 @@
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
 }
 
-.navbar {
+.navbar{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   background-color: #222222;
   color: #DDDDDD;
+  
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
+  
+  
   font-size: 20px;
 }
 
@@ -203,7 +215,7 @@
   border-color: #DDDDDD;
 }
 
-.pageHeader {
+.pageHeader{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +226,7 @@
   box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.3);
 }
 
-.pageTitle {
+.pageTitle{
   background-color: #222222;
   color: #DDDDDD;
   font-size: 30px;
@@ -222,7 +234,13 @@
   margin-top: 0px;
 }
 
-.loginSignup {
+.createPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginSignup{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,14 +248,14 @@
   padding-top: 9vh;
 }
 
-.makeColumn {
+.makeColumn{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
 }
 
-.loginSignupError {
+.loginSignupError{
   color: red;
   font-size: 12px;
   font-weight: bold;
@@ -245,7 +263,7 @@
   margin-bottom: 1.5vh;
 }
 
-.loginSignuptext {
+.loginSignuptext{
   font-weight: bold;
   font-size: 17px;
   padding: 0px;
@@ -253,7 +271,7 @@
   align-self: center;
 }
 
-.loginSignupSubmit {
+.loginSignupSubmit{
   background-color: #222222;
   border-radius: 5px;
   color: #DDDDDD;
@@ -262,16 +280,16 @@
   cursor: pointer;
 }
 
-.loginSignupInput {
+.loginSignupInput{
   width: 20vw;
   height: 2.5vh;
   border: solid 2px;
   border-radius: 5px;
 }
 
-.usernameDisplay {
+.usernameDisplay{
   color: #DDDDDD;
-  width: 100vw;
+  width:100vw;
   display: flex;
   justify-content: end;
   margin-right: 30px;
@@ -279,7 +297,7 @@
   font-weight: bold;
 }
 
-.privacyTitle {
+.privacyTitle{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -293,7 +311,7 @@
   padding: 10px;
 }
 
-.privacyButton {
+.privacyButton{
   height: 50%;
   margin-top: 3%;
   margin-right: 3%;
@@ -303,26 +321,26 @@
   cursor: pointer;
 }
 
-.privacyHeader {
+.privacyHeader{
   font-size: 22px;
   font-weight: bold;
 }
 
-.privacyBody {
+.privacyBody{
   font-size: 16px;
 }
 
-.privacyLogo {
+.privacyLogo{
   font-weight: bold;
 }
 
-.privacyWhole {
+.privacyWhole{
   padding: 30px;
   margin-bottom: -8%;
 }
 
-.signupPrivacy {
-  width: 20vw;
+.signupPrivacy{
+  width:20vw;
   text-align: center;
   word-wrap: break-word;
   margin-bottom: 5%;
@@ -333,50 +351,55 @@
   background-color: #EEEEEE;
 }
 
-.signupPrivacy a {
-  color: #222222;
+.signupPrivacy a{
+  color:#222222;
 }
 
-.signupPrivacyText {
+.signupPrivacyText{
   width: 100%;
-  margin: 0px;
+  margin:0px;
+  
+
 }
 
-.loginPrivacyText {
+.loginPrivacyText{
   width: 20vw;
   text-align: center;
 }
 
-.loginPrivacyText a {
-  color: #222222;
+.loginPrivacyText a{
+  color:#222222;
   font-weight: bold;
 }
 
-.aboutIntro {
+.aboutIntro{
   width: 100%;
+
   font-size: 24px;
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
 }
 
-.aboutHeader {
+.aboutHeader{
   font-size: 26px;
   font-weight: bold;
 }
 
-.aboutBody {
+.aboutBody{
   font-size: 20px;
+
 }
 
-.pollarTitle {
+.pollarTitle{
+
   text-align: center;
   font-size: 35px;
   margin: 0;
   margin-bottom: 3vh;
   font-weight: bolder;
   background-color: #DDDDDD;
-  padding: .8%;
+  padding:.8%;
   padding-right: 1.5%;
   padding-left: 1.5%;
   border: solid 5px;
@@ -384,153 +407,24 @@
   color: #222222;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3)
 }
 
-.aboutWhole {
+.aboutWhole{
   padding: 30px;
   height: 93vh;
   margin-bottom: -8%;
 }
 
-.suggestions {
+.suggestions{
   font-size: 16px;
   font-weight: bold;
 }
 
-.pageNotFound {
+.pageNotFound{
   height: 76vh;
   width: 100vw;
   background-color: #DDDDDD;
   padding: 50px;
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .createPostText, .createPostTitle, .createPostSubmit, .loginSignupInput, .signupPrivacy, .loginPrivacyText {
-    width: 90%;
-    font-size: 14px;
-  }
-
-  .postHeader, .postBody, .postFooter {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .postFooter {
-    padding: 0 10%;
-  }
-
-  .navbar {
-    flex-direction: column;
-    font-size: 18px;
-  }
-
-  .navbar a {
-    padding: 10px 15px;
-  }
-
-  .pageHeader {
-    margin-right: 0;
-  }
-
-  .usernameDisplay {
-    justify-content: center;
-    margin: 10px 0;
-  }
-
-  .privacyTitle {
-    font-size: 24px;
-    padding: 5px;
-  }
-
-  .privacyButton {
-    font-size: 14px;
-    margin: 2%;
-  }
-
-  .signupPrivacy, .loginSignupInput {
-    width: 80%;
-  }
-
-  .loginPrivacyText {
-    width: 80%;
-  }
-
-  .aboutIntro {
-    font-size: 20px;
-  }
-
-  .aboutHeader {
-    font-size: 22px;
-  }
-
-  .aboutBody {
-    font-size: 18px;
-  }
-
-  .pollarTitle {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .createPostText, .createPostTitle, .createPostSubmit, .loginSignupInput, .signupPrivacy, .loginPrivacyText {
-    width: 95%;
-    font-size: 12px;
-  }
-
-  .postHeader, .postBody, .postFooter {
-    flex-direction: column;
-    padding: 5px;
-  }
-
-  .postFooter {
-    padding: 0 5%;
-  }
-
-  .navbar {
-    font-size: 16px;
-  }
-
-  .navbar a {
-    padding: 5px 10px;
-  }
-
-  .usernameDisplay {
-    margin: 10px 0;
-  }
-
-  .privacyTitle {
-    font-size: 20px;
-  }
-
-  .privacyButton {
-    font-size: 12px;
-    margin: 1%;
-  }
-
-  .signupPrivacy, .loginSignupInput {
-    width: 90%;
-  }
-
-  .loginPrivacyText {
-    width: 90%;
-  }
-
-  .aboutIntro {
-    font-size: 18px;
-  }
-
-  .aboutHeader {
-    font-size: 20px;
-  }
-
-  .aboutBody {
-    font-size: 16px;
-  }
-
-  .pollarTitle {
-    font-size: 24px;
-  }
 }
