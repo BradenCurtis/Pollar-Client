@@ -437,4 +437,9 @@ cursor: pointer;
   .postTop{
     width: 100%;
   }
+
+  .postFooter{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
