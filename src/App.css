@@ -433,4 +433,8 @@ cursor: pointer;
   .postWhole{
     width: 90%;
   }
+
+  .postTop{
+    width: 100%;
+  }
 }
