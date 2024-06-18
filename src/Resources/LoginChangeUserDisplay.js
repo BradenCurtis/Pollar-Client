@@ -6,9 +6,9 @@ export const LoginChangeUserDisplay = () => {
 
     if (username){
         return (
-            <div>
+            <>
                 <Link to="/login">Change User</Link>
-            </div>
+            </>
             );
     } else{
         return (
