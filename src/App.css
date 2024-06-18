@@ -451,4 +451,19 @@ cursor: pointer;
     border: solid 1px;
     border-color: #DDDDDD;
   }
+
+  .createPostText{
+    width: 90%;
+    height: 90%;
+  }
+  
+  .createPostTitle{
+    width: 90%;
+    height: 90%;
+  }
+  
+  .createPostSubmit{
+    width: 90%;
+    height: 90%;
+  }
 }
